@@ -296,97 +296,28 @@ get_header(); ?>
 			<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
 			<section id="team" class="wpb-section">
+					<div class="wpb-section-inner">
+						<div class="container">
+							<article>
 
-				<!-- Background pattern overlay -->
-				<!-- <div class="wpb-section-overlay"></div> -->
+								<!-- Start section header -->
+								<div class="section-header wow fadeIn">
+									<h1 class="section-title">Our Team</h1>
+									<div class="section-header-sep"><span></span></div>
+									<h4 class="section-tagline">Meet the faces behind our company</h4>
+								</div>
+								<!-- End section header -->
 
-				<div class="wpb-section-inner">
-					<div class="container">
-
-						<article>
-
-							<!-- Start section header -->
-							<div class="section-header wow fadeIn">
-								<h1 class="section-title">Our Team</h1>
-								<div class="section-header-sep"><span></span></div>
-								<h4 class="section-tagline">Meet the faces behind our company</h4>
-							</div>
-							<!-- End section header -->
-
-							<div class="entry-content">
-								<div class=" container clearfix">
-
- 									<?php echo do_shortcode("[easy_widget id=44]");?>
-
-
-<!-- 										<div class="col-sm-4 col-md-4 wpb-format-member">
-											<div class="entry-header">
-												<div class="entry-featured-archive">
-													<img src="http://d2isblg909whrf.cloudfront.net/themes/wpb/team-member.png" alt="Team 1" width="370" height="280">
-													<span class="entry-featured-data clearfix">
-														<span class="entry-title">Frank Murray</span>
-														<span class="entry-data">President and Founder</span>
-													</span>
-												</div>
-											</div>
-											<div class="entry-excerpt">
-												<p>
-													Urna nulla proin. Sapien quam urna. Non vitae congue justo nonummy eu turpis pharetra at cursus fusce vitae rutrum libero euismod ornare at&hellip;
-													<br/>
-													<a class="wpb-readmore" href="#">Read more</a> 
-												</p>     
-											</div>
-										</div>  -->
-										<!-- End slider block -->
-
-										<!-- Start slider block -->
-<!-- 										<div class="col-sm-4 col-md-4 wpb-format-member">
-											<div class="entry-header">
-												<div class="entry-featured-archive">
-													<img src="http://d2isblg909whrf.cloudfront.net/themes/wpb/team-member.png" alt="Team 2" width="370" height="280">
-
-													<span class="entry-featured-data clearfix">
-														<span class="entry-title">Doug Kilzer</span>
-														<span class="entry-data">Co-Founder and Chief Customer Officer </span>
-													</span>
-												</div>
-											</div>
-											<div class="entry-excerpt">
-												<p>
-													Urna nulla proin. Sapien quam urna. Non vitae congue justo nonummy eu turpis pharetra at cursus fusce vitae rutrum libero euismod ornare at&hellip;
-													<br/>
-													<a class="wpb-readmore" href="#">Read more</a> 
-												</p>
-											</div>
-										</div> -->
-										<!-- End slider block -->
-
-										<!-- Start slider block -->
-<!-- 										<div class="col-sm-4 col-md-4 wpb-format-member">
-											<div class="entry-header">
-												<div class="entry-featured-archive">
-													<img src="http://d2isblg909whrf.cloudfront.net/themes/wpb/team-member.png" alt="Team 3" width="370" height="280">
-													<span class="entry-featured-data clearfix">
-														<span class="entry-title">Harry Fisher</span>
-														<span class="entry-data">Chief Resource Officer </span>
-													</span>
-												</div>
-											</div>
-											<div class="entry-excerpt">
-												<p>
-													Urna nulla proin. Sapien quam urna. Non vitae congue justo nonummy eu turpis pharetra at cursus fusce vitae rutrum libero euismod ornare at&hellip;
-													<br/>
-													<a class="wpb-readmore" href="#">Read more</a> 
-												</p>
-											</div>
-										</div> -->
-										<!-- End slider block -->
+								<div class="entry-content">
+									<div class=" container clearfix">
+										<?php echo do_shortcode("[easy_widget id=44]");?>
 									</div>
 								</div>
-							</div>		
-						</article>
-					</div>
-				</div>					
+
+								</article>
+							</div>
+						</div>
+					</div>				
 			</section>
 			<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 			<!-- !End Section Team -->
@@ -410,9 +341,8 @@ get_header(); ?>
 									<i class="fa fa-twitter"></i>
 								</div>
 								<div class="entry-content clearfix">
-									<p>We just launched our new website #relaunch</p>
+									<?php if(function_exists('ditty_news_ticker')){ditty_news_ticker(51);} ?>								
 								</div>
-								<div class="entry-title">Posted 2 hours ago</div>
 							</div>
 							<!-- End resource -->
 					</div><!-- .container -->

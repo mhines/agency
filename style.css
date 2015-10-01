@@ -224,6 +224,7 @@ img {
 /* !Classes */
 /* --------------------------------------------------------- */
 
+
 .large {
 	font-size: 35px;
 	font-weight: 400;
@@ -321,15 +322,20 @@ br + .wpb-readmore {
 	text-transform:uppercase;
 	color: hsl(0, 0%, 100%) !important;
 	background: hsl(195, 56%, 42%);
-	border: 2px solid hsl(195, 56%, 42%);
+	border: 0px solid hsl(195, 56%, 42%);
 	outline: none;
 	white-space: nowrap;
-	padding: 14px 24px;
+	padding: 16px 24px;
 	border-radius: 5px;
 	box-shadow: none;
 	-webkit-transition: color .25s ease, border-color .25s ease, padding .25s ease;
 	transition: color .25s ease, border-color .25s ease, padding .25s ease;
 }
+
+.btn:hover {
+	background:#7CCDFD
+}
+
 .btn:focus {
 	box-shadow: none;
 	outline: none !important;
@@ -400,7 +406,7 @@ br + .wpb-readmore {
 }
 
 .wpb-section-inner {
-	padding: 100px 0;
+	padding: 40px 0;
 }
 
 .wpb-section-overlay {
@@ -571,17 +577,25 @@ br + .wpb-readmore {
 	margin:0
 }
 
-#team .more-link
-{
-    font: normal 300 14px/22px 'Raleway';
 
-    text-align: left;
+#team .more-link {
+	  text-align: left;
     text-transform: uppercase;
+}
+
+
+#team .more-link a
+{
+    font: normal 500 14px/22px 'Raleway';
 }
 
 #team .read-more
 {
     background: hsl(195, 56%, 42%);
+}
+
+#team .read-more:hover {
+	background:#7CCDFD;
 }
 
 
@@ -598,7 +612,7 @@ br + .wpb-readmore {
 	background: hsl(0, 0%, 100%);
 }
 #main > *:last-child {
-	padding-bottom: 170px;
+	padding-bottom: 50px;
 }
 .post-edit-link {
 	position: absolute;
@@ -731,8 +745,9 @@ br + .wpb-readmore {
 		display: table-cell;
 		vertical-align: middle;
 		font-size: 17px;
-		font-weight: 400;
+		font-weight: 600;
 		padding-left: 20px;
+		text-transform:uppercase
 	}
 	.wpb-style-dark .wpb-icon-title {
 		color: hsl(0, 0%, 100%);
@@ -777,8 +792,9 @@ br + .wpb-readmore {
 	}
 
 /* --------------------------------------------------------- */
-/* !Quotes & Tweets */
+/* !Tweets Ticker */
 /* --------------------------------------------------------- */
+#tweets {}
 
 #tweets
 {
@@ -789,16 +805,41 @@ br + .wpb-readmore {
             background-size: cover;
 }
 
+#tweets .mtphr-dnt-twitter-name {
+	font:normal 600 35px/35px 'raleway';
+	color:#fff
+}
+
+#tweets .mtphr-dnt-twitter-handle {
+	color:#fff
+}
+
+#tweets .mtphr-dnt-twitter-text {
+	font:normal 500 20px/24px 'raleway';
+	color:#fff;
+	padding:10px 0;
+	max-width:1000px;
+	margin:0 auto
+}
+
+#tweets .mtphr-dnt-twitter-time {
+	font:normal 500 16px'raleway';
+	color:#fff
+}
+
+#tweets .mtphr-dnt-nav {display:none}
+
 .wpb-format-quote,
 .wpb-format-tweet {
 	text-align: center;
 }
+
 .wpb-format-quote .entry-featured,
 .wpb-format-tweet .entry-featured {
 	display: inline-block;
 	text-align: center;
 	padding: 6px;
-	margin: 30px 0;
+	margin: 30px 0 0;
 	border: 2px solid hsl(212, 100%, 63%);
 	border-radius: 50px;
 }
@@ -826,31 +867,7 @@ br + .wpb-readmore {
 	margin: 25px 0;
 	color:hsl(0, 0%, 100%)
 }
-.wpb-format-quote .entry-content p:last-child,
-.wpb-format-tweet .entry-content p:last-child {
-	margin-bottom: 0;
-}
-.wpb-format-quote .entry-title,
-.wpb-format-tweet .entry-title {
-	margin: 25px 0;
-}
-.wpb-format-quote .entry-title,
-.wpb-format-quote .entry-title a,
-.wpb-format-tweet .entry-title,
-.wpb-format-tweet .entry-title a {
-	font-size: 18px;
-	font-weight: normal;
-	line-height: 30px;
-	color: hsl(0, 0%, 100%);
-}
-article.wpb-format-quote > *:first-child,
-article.wpb-format-tweet > *:first-child {
-	margin-top: 0;
-}
-article.wpb-format-quote > *:last-child,
-article.wpb-format-tweet > *:last-child {
-	margin-bottom: 0;
-}
+
 @media (min-width: 768px) {
 	.wpb-format-quote .entry-content,
 	.wpb-format-tweet .entry-content {
@@ -858,6 +875,7 @@ article.wpb-format-tweet > *:last-child {
 		line-height: 36px;
 	}
 }
+
 
 /* --------------------------------------------------------- */
 /* !Blog */
@@ -1525,6 +1543,12 @@ Media Queries
 		font-size: 60px;
 		line-height: 70px;
 	}
+	
+
+	#tweets .mtphr-dnt-nav {display:block}
+	#tweets .mtphr-dnt-twitter-name {font-size:50px}
+	#tweets .mtphr-dnt-twitter-handle {font-size:50px}
+	#tweets .mtphr-dnt-twitter-text {font-size:30px; line-height: 35px}
 
 	.copyright {
 		float: right;
@@ -1533,5 +1557,7 @@ Media Queries
  
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1200px) {
+
+
  
 }
